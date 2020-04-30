@@ -19,12 +19,15 @@
             <div id="logo">
                 <img src="img/logo.png" alt="">
             </div>
+            <% if( typeof msg !== 'undefined') {%>
+                <h3><%= msg %></h3>
+            <% } %>
             <input type="email" name="email" placeholder="Digite seu email">
             <input type="text" name="name" placeholder="Digite seu nome completo">
             <input type="text" name="username" placeholder="Digite seu nome de usuario">
             <input type="password" name="password" placeholder="Senha">
             <button type="submit">
-                Cadastra-se
+                Cadastre-se
             </button>
             <p>
                 Ao se cadastrar, você concorda com nossos <b>Termos, Política de Dados e Política de Cookies.</b>
@@ -33,7 +36,6 @@
                 <p> Tem uma conta? <a href="/login"><b>Conecte-se</b></a> </p>
             </div>
         </form>
-
     </main>
 </body>
 
