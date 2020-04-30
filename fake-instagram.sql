@@ -6,13 +6,13 @@ USE `fake_instagram` ;
 -- -----------------------------------------------------
 CREATE TABLE users (
   `id` INT AUTO_INCREMENT PRIMARY KEY,
-  `name` VARCHAR(192) ,
-  `email` VARCHAR(192)  UNIQUE,
-  `username` VARCHAR(45) UNIQUE,
-  `password` VARCHAR(192) ,
+  `name` VARCHAR(192) NOT NULL,
+  `email` VARCHAR(192)  UNIQUE NOT NULL,
+  `username` VARCHAR(45) UNIQUE NOT NULL,
+  `password` VARCHAR(192) NOT NULL,
   `avatar` VARCHAR(192),
-  `create_at` DATETIME,
-  `update_at` DATETIME
+  `created_at` DATETIME,
+  `updated_at` DATETIME
   );
 
 
@@ -23,8 +23,8 @@ CREATE TABLE publications(
   `id` INT AUTO_INCREMENT PRIMARY KEY,
   `image` VARCHAR(192),
   `like` INT,
-  `create_at`DATETIME,
-  `update_at` DATETIME,
+  `created_at`DATETIME,
+  `updated_at` DATETIME,
   `users_id` INT NOT NULL,
     FOREIGN KEY (users_id) REFERENCES users (id)
     );
@@ -36,8 +36,8 @@ CREATE TABLE publications(
 CREATE TABLE IF NOT EXISTS `fake_instagram`.`comments` (
   `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `description` TEXT,
-  `create_at` DATETIME,
-  `update_at` DATETIME,
+  `created_at` DATETIME,
+  `updated_at` DATETIME,
   `publications_id` INT NOT NULL,
     FOREIGN KEY (publications_id)
     REFERENCES publications (id)
