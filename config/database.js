@@ -1,5 +1,3 @@
-// need to be updated w/ database informations
-
 let config = {
   username: 'root', 
   password: 'docker',
