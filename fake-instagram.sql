@@ -1,5 +1,5 @@
-CREATE SCHEMA IF NOT EXISTS `fake-instagram` DEFAULT CHARACTER SET utf8 ;
-USE `fake-instagram` ;
+CREATE SCHEMA IF NOT EXISTS `fake_instagram` DEFAULT CHARACTER SET utf8 ;
+USE `fake_instagram` ;
 
 -- -----------------------------------------------------
 -- Table `mydb`.`users`
@@ -33,7 +33,7 @@ CREATE TABLE publications(
 -- -----------------------------------------------------
 -- Table `mydb`.`comments`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `fake-instagram`.`comments` (
+CREATE TABLE IF NOT EXISTS `fake_instagram`.`comments` (
   `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `description` TEXT,
   `create_at` DATETIME,
