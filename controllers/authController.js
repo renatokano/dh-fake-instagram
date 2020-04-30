@@ -1,5 +1,5 @@
 const controller = {
-  create:  (req, res, next) => {
+  create:  (_req, res) => {
       res.render("auth/login", { title: "Express" });
   }
 }
