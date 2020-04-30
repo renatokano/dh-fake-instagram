@@ -9,7 +9,9 @@
     <header>
       <div class="container header">
         <div id="logo">
-          <img src="/img/logo.png">
+          <a href="/home">
+            <img src="/img/logo.png">
+          </a>
         </div>
         <div class="busca">
           <form>
@@ -17,13 +19,13 @@
           </form>
         </div>
         <nav>
-          <a href="http://">
+          <a href="/home">
             <img src="/img/icons/home.svg">
           </a>
           <a href="">
             <div class="avatar-content">
               <img class="avatar" src="/img/avatar-example.png">
-              <b>nati.carolira</b>
+              <b><%= username %></b>
             </div>
           </a>
         </nav>
@@ -34,9 +36,9 @@
         <div class="card-header">
           <div>
             <img class="avatar" src="/img/avatar-example.png">
-            <b>nati.carolira</b>
+            <b><%= username %></b>
           </div>
-            <img src="/img/icons/more-vertical.svg">
+          <img src="/img/icons/more-vertical.svg">
         </div>
         <div class="card-img">
           <img src="/img/publication_example.jpg">
@@ -66,7 +68,7 @@
         <div class="card-header">
           <div>
             <img class="avatar" src="/img/avatar-example.png">
-            <b>nati.carolira</b>
+            <b><%= username %></b>
           </div>
             <img src="/img/icons/more-vertical.svg">
         </div>

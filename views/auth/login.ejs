@@ -17,6 +17,9 @@
                 <div id="logo">
                     <img src="img/logo.png" alt="">
                 </div>
+                <% if( typeof msg !== 'undefined') {%>
+                    <h3><%= msg %></h3>
+                <% } %>
                 <input type="email" name="email" placeholder="Digite seu email">
                 <input type="password" name="password" placeholder="Senha">
                 <button type="submit">
@@ -26,10 +29,6 @@
                     <p> Não tem uma conta? <a href="/registro"><b>Cadastre-se</b></a> </p>
                 </div>
             </form>
-
-            <% if( typeof msg !== 'undefined') {%>
-            <h1><%= msg %></h1>
-            <% } %>
         </div>
     </main>
 </body>
