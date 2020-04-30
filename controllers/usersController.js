@@ -7,13 +7,7 @@ let controller = {
     res.render("index", { title: "Express" });
   },
 
-  index: (req, res, next) => {
-      res.render("auth/login", { title: "Express" });
-  },
-
-  create:  (req, res, next) => {
-    res.render("auth/register", { title: "Express" });
-  },
+  create:  (_req, res) => res.render("auth/register", { title: "Express" }),
 
   store: (req, res, next) =>{
       let {email, name, username, password} = req.body
