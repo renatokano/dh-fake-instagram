@@ -11,7 +11,7 @@ let controller = {
 
   store: (req, res, next) =>{
       let {email, name, username, password} = req.body
-      const users = db.query("INSERT INTO USERS (name, email, username, password) VALUES(:name, :email, :username, :password)", { 
+      const users = db.query("INSERT INTO users (name, email, username, password) VALUES(:name, :email, :username, :password)", { 
         type: Sequelize.QueryTypes.INSERT, 
         replacements: {name, email, username, password} 
       }).then((resultado) =>{
