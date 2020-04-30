@@ -1,6 +1,6 @@
-# dh-fake-instagram
+# [DigitalHouse Challenge] dh-fake-instagram
 
-[DigitalHouse Challenge] Instagram Clone (Both frontend and backend) created w/ NodeJS, Express, Sequelize and MySQL.
+Instagram Clone (Both frontend and backend) created w/ NodeJS, Express, Sequelize and MySQL.
 
 ## Note
 This repository is still under development and we'll continue to add more features to it.
