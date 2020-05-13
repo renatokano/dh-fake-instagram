@@ -39,7 +39,8 @@ CREATE TABLE IF NOT EXISTS `fake_instagram`.`comments` (
   `created_at` DATETIME,
   `updated_at` DATETIME,
   `publications_id` INT NOT NULL,
-    FOREIGN KEY (publications_id)
-    REFERENCES publications (id)
-    )
+  FOREIGN KEY (publications_id) REFERENCES publications (id),
+  `user_id` INT NOT NULL,
+  FOREIGN KEY (user_id) REFERENCES users (id)
+  );
 
