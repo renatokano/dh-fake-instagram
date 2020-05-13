@@ -5,14 +5,17 @@ Instagram Clone (Both frontend and backend) created w/ NodeJS, Express, Sequeliz
 ## Note
 This repository is still under development and we'll continue to add more features to it.
 
-<!-- ## Features
+## Features
 
- * Custom photo feed based on who you follow
- * Post photo posts from camera or gallery
-   * Like posts
-      * View all likes on a post
-   * Comment on posts
-        * View all comments on a post
+ * Photo feed
+ * Post photo 
+   * Posts from gallery
+ * Like posts
+   * View all likes on a post
+ * Comment on posts
+   * View all comments on a post
+
+<!---
  * Search for users
     * Search screen showing all images except your own
     * Search based on usernames
@@ -22,7 +25,8 @@ This repository is still under development and we'll continue to add more featur
    * Edit profile
  * Chat Screen
     * Chat with any user
-    * Share images while chatting -->
+    * Share images while chatting 
+-->
 
 ## Getting started
 
