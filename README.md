@@ -1,8 +1,22 @@
-# [DigitalHouse Challenge] dh-fake-instagram
+<h3 align="center">
+    <img alt="Instagram" src="https://pbs.twimg.com/profile_images/1126625068564402176/VV114FWs_400x400.png" width="90px" />
+</h3>
+
+<h1 align="center">
+  [DigitalHouse] Bootcamp Challenge<br/>Instagram Clone
+</h1>
+
+<p align="center">
+  [&nbsp;&nbsp;&nbsp;
+  <a href="#about-the-project">About the Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#getting-started">Getting Started</a>&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;]
+</p>
+
+## About The Project
 
 Instagram Clone (Both frontend and backend) created w/ NodeJS, Express, Sequelize and MySQL.
 
-## Note
 This repository is still under development and we'll continue to add more features to it.
 
 ## Features
