@@ -7,7 +7,6 @@ const SALT = 10;
 let controller = {
   home: (req, res) => {
     const {name, email, username} = req.session.user; 
-    console.log(name, email, username);
     res.render("index", { 
       title: "Express",
       name,
@@ -46,7 +45,6 @@ let controller = {
           }
       }).catch(err => {
         res.render("auth/register", {msg: "Erro ao cadastrar usuário"});
-        console.log(err);
       })
     });
   }
