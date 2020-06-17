@@ -20,7 +20,7 @@ router.get("/home", authenticationMiddleware, publicationsController.index);
 // publication page
 router.get('/publicar', authenticationMiddleware, publicationsController.create);
 router.post('/publicar', upload.any(), publicationsController.store);
-router.get('/curtir/:id', authenticationMiddleware, publicationsController.update);
+router.get('/publicacao/:id/like', authenticationMiddleware, publicationsController.like);
 // comments
 router.post('/comentar', authenticationMiddleware, commentsController.store);
 module.exports = router;

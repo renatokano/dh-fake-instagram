@@ -41,17 +41,17 @@ const controller = {
     });
     res.redirect('/home');
   },
-  update: async (req, res) => {
+  like: async (req, res) => {
     const {id: idPost} = req.params;
     const result = await Publication.increment(
-      'like',
-      {
+      'like', {
         by: 1,
-        where: {
-          id: idPost
-        }
+        where: {id: idPost}
       }
     );
+    // const publicationData = await Publication.findByPk(id);
+    // publicationData.like++
+    // await publicationDate.save();
     console.log(`Result: ${result}`);
     res.redirect('/home');
   }
